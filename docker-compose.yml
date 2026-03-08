@@ -1,5 +1,6 @@
 services:
   cli-proxy-api:
+    user: "0:0"
     image: ${CLI_PROXY_IMAGE:-eceasy/cli-proxy-api:latest}
     # Removed pull_policy: always to prioritize local builds with custom static files
     build:
